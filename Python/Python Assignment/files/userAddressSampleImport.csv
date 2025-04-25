@@ -1,0 +1,5 @@
+user_id,type,address_line1,address_line2,city,state,country,zip_code
+1,current,123 Main St,Apt 4B,Mumbai,MH,India,400001
+1,permanent,456 Park Avenue,-,Delhi,DL,India,110001
+2,current,789 Hill Road,Near Mall,Pune,MH,India,411002
+2,permanent,101 Ocean Drive,Tower 5,Goa,GA,India,403001
