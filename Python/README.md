@@ -1,10 +1,10 @@
 # Assignment-1
-**Write a program to reverse a string without using built-in methods**
+**Python program to find the sum of first N prime numbers**
 
 ![image](https://github.com/user-attachments/assets/a2b41b92-4cea-4136-88bf-38b8772944ca)
 
 # Assignemt-2 
-**Write a program to reverse a string without using built-in methods**
+**Python program to reverse a string without using built-in methods**
 
 ![image](https://github.com/user-attachments/assets/e3984a95-71a9-4cd3-a285-310fd8a842e0)
 
