@@ -43,3 +43,14 @@
 
 ![image](https://github.com/user-attachments/assets/5a00b36e-0d0a-426d-8612-c6c34148905d)
 
+# Minor-Project-1
+# Simple Calculator: Build a CLI-based calculator that supports basic arithmetic operations and handles invalid input gracefully
+
+![image](https://github.com/user-attachments/assets/4af091f2-829b-4754-b6a0-ee031552799a)
+
+![image](https://github.com/user-attachments/assets/d044fcb7-8937-4f39-9103-e5f8aebc3b77)
+
+![image](https://github.com/user-attachments/assets/dfe348fb-a527-4790-a692-cb5f1b787e73)
+
+![image](https://github.com/user-attachments/assets/8f9798f0-dc67-4e0e-a4c8-6a56ecc0aef5)
+
