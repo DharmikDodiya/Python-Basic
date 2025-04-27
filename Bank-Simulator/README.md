@@ -27,7 +27,7 @@ After Display Bank Simulator Menu
 
 ![image](https://github.com/user-attachments/assets/0fec5bb8-eb3e-4064-827b-64264ed47ab7)
 
-**View Account**
+**View Account(Check Balance)**
 - Users can view their account details by entering their account PIN, which is validated before accessing account information.
 ![image](https://github.com/user-attachments/assets/397929bd-b208-4b54-ad44-da61d4c2ff59)
 
