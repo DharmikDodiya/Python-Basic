@@ -32,10 +32,10 @@
 #     data = response.json()
 #     articles = data.get("articles", [])
 #     print(f"{articles}")
-#     print(f"\n🔎 Total articles found: {data.get('totalResults', 0)}\n")
+#     print(f"\nTotal articles found: {data.get('totalResults', 0)}\n")
 
 #     # for i, article in enumerate(articles, start=1):
-#     #     print(f"📰 Article {i}:")
+#     #     print(f"Article {i}:")
 #     #     print(f"  Title      : {article['title']}")
 #     #     print(f"  Author     : {article.get('author', 'Unknown')}")
 #     #     print(f"  Source     : {article['source']['name']}")
@@ -43,7 +43,7 @@
 #     #     print(f"  URL        : {article['url']}")
 #     #     print(f"  Description: {article.get('description', 'No description')}\n")
 # else:
-#     print(f"❌ Error: {response.status_code}")
+#     print(f"Error: {response.status_code}")
 #     print(response.text)
 
 
@@ -73,11 +73,11 @@
 #     to_date = datetime.strptime(to_date_input, "%Y-%m-%d")
     
 #     if from_date < min_allowed_date:
-#         print(f"❌ Your start date is too far in the past. Try {min_allowed_date.strftime('%Y-%m-%d')} or later.")
+#         print(f"Your start date is too far in the past. Try {min_allowed_date.strftime('%Y-%m-%d')} or later.")
 #     elif to_date > today:
-#         print("❌ Your end date is in the future. Use today's date or earlier.")
+#         print("Your end date is in the future. Use today's date or earlier.")
 #     elif from_date > to_date:
-#         print("❌ Start date must be before end date.")
+#         print("Start date must be before end date.")
 #     else:
 #         params = {
 #             "q": search_term,
@@ -96,10 +96,10 @@
 #             data = response.json()
 #             articles = data.get("articles", [])
 
-#             print(f"\n🔎 Found {data.get('totalResults', 0)} articles\n")
+#             print(f"\nFound {data.get('totalResults', 0)} articles\n")
 
 #             for i, article in enumerate(articles, start=1):
-#                 print(f"📰 Article {i}:")
+#                 print(f"Article {i}:")
 #                 print(f"  Title      : {article['title']}")
 #                 print(f"  Author     : {article.get('author', 'Unknown')}")
 #                 print(f"  Source     : {article['source']['name']}")
@@ -107,11 +107,11 @@
 #                 print(f"  URL        : {article['url']}")
 #                 print(f"  Description: {article.get('description', 'No description')}\n")
 #         else:
-#             print(f"❌ API Error {response.status_code}:")
+#             print(f"API Error {response.status_code}:")
 #             print(response.text)
 
 # except ValueError:
-#     print("❌ Invalid date format. Please use YYYY-MM-DD.")
+#     print("Invalid date format. Please use YYYY-MM-DD.")
 
 
 
@@ -135,12 +135,12 @@ today = datetime.now()
 min_allowed_date = today - timedelta(days=max_days)
 
 # --- Input from user ---
-search_term = input("🔍 Enter search term (e.g. bitcoin): ")
-from_date_input = input(f"📅 Start date [After {min_allowed_date.strftime('%Y-%m-%d')}]: ")
-to_date_input = input(f"📅 End date [Up to {today.strftime('%Y-%m-%d')}]: ")
-language = input("🌐 Language (en, hi, etc.): ")
-sort_by = input("🔃 Sort by (relevancy, popularity, publishedAt): ")
-page_size = input("📄 Number of articles (1–100): ")
+search_term = input("Enter search term (e.g. bitcoin): ")
+from_date_input = input(f"Start date [After {min_allowed_date.strftime('%Y-%m-%d')}]: ")
+to_date_input = input(f"End date [Up to {today.strftime('%Y-%m-%d')}]: ")
+language = input("Language (en, hi, etc.): ")
+sort_by = input("Sort by (relevancy, popularity, publishedAt): ")
+page_size = input("Number of articles (1–100): ")
 
 # --- Validate and Fetch News ---
 try:
@@ -148,7 +148,7 @@ try:
     to_date = datetime.strptime(to_date_input, "%Y-%m-%d")
 
     if from_date < min_allowed_date or to_date > today or from_date > to_date:
-        print("❌ Invalid date range.")
+        print("Invalid date range.")
     else:
         params = {
             "q": search_term,
@@ -166,7 +166,7 @@ try:
             data = response.json()
             articles = data.get("articles", [])
 
-            print(f"\n🔎 Found {len(articles)} articles\n")
+            print(f"\nFound {len(articles)} articles\n")
 
             for i, article in enumerate(articles, start=1):
                 title = article['title']
@@ -176,9 +176,9 @@ try:
                 engine.runAndWait()
 
         else:
-            print(f"❌ API Error {response.status_code}")
+            print(f"API Error {response.status_code}")
             print(response.text)
 
 except ValueError:
-    print("❌ Invalid date format. Use YYYY-MM-DD")
+    print("Invalid date format. Use YYYY-MM-DD")
 

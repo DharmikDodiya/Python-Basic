@@ -19,7 +19,7 @@ def run():
 
         if choice == "1":
             name = input("Enter account holder name: ")
-            amount = float(input("Enter amount to initial deposit: "))
+            amount = float(input("Enter amount to initial deposit: ").isdigit())
             if amount <= 0:
                 print("Amount must be greater than zero.")
                 continue

@@ -117,7 +117,12 @@ def connect_db():
 
 def add_book():
     title = input("Enter book title: ").strip()
-    author = input("Enter author name: ").strip()
+    while True:
+        author = input("Enter author name: ").strip()
+        if author.replace(" ", "").isalpha():
+            break
+        else:
+            print("Author name must contain only letters. Please try again.")
 
     conn = connect_db()
     cursor = conn.cursor()
@@ -184,8 +189,13 @@ def delete_book():
 def update_book():
     book_id = input("Enter book ID to update: ").strip()
     title = input("Enter new title: ").strip()
-    author = input("Enter new author: ").strip()
-
+    while True:
+        author = input("Enter author name: ").strip()
+        if author.replace(" ", "").isalpha():
+            break
+        else:
+            print("Author name must contain only letters. Please try again.")
+    
     conn = connect_db()
     cursor = conn.cursor()
     try:
