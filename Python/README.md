@@ -106,4 +106,8 @@
 
 ![image](https://github.com/user-attachments/assets/d84287cc-f511-4cfe-a470-b30c43d57b37)
 
+# Python Exercises
 
+**This Python program fetches the latest news articles based on user input using the NewsAPI service and reads out the headlines using a text-to-speech engine (pyttsx3)**
+
+![image](https://github.com/user-attachments/assets/4bf77d84-4f52-4365-a506-9e45bb3578b5)
