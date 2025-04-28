@@ -1,4 +1,4 @@
-# This program allows the user to interact with a MySQL database to simulate basic banking operations. It enables the creation of a database and table, user account management, and secure transactions. Below is the overview of the system's features
+# This program allows the user to interact with a MySQL database to simulate basic banking operations. It enables the creation of a database and table and user account management. Below is the overview of the system's features
 
 **Features**
 - Database Creation & Credential Storage:
